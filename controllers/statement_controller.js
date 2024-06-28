@@ -70,8 +70,8 @@ try {
     // To route to get the closed route of the specific id
      // const status = req.params.caseStatus
     // So in the statement-route.js router.patch('/statement/:id/:caseStatus', updateStatement);
-    const status = req.body.caseStatus
-    console.log("request",status)
+    // const status = req.body.caseStatus
+    // console.log("request",status)
 const updateSpeci = await StatementModel.findByIdAndDelete(req.params.id)
 res.status(200).send(`Statement with ID number ${req.params.id} has been deleted`)
 // res.json(`Statement has been deleted ${req.params.body}`)
